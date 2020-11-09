@@ -1,0 +1,140 @@
+
+html,body{
+	width: 100%;
+	height: 100%;
+	font-family: Roboto;
+	font-size: 14px;
+}
+
+#body-login{
+	background-color: #00909C;
+}
+/* star css dang nhap */
+#body-flex-login{
+	display: flex;
+	height: 100%;
+	justify-content:center;
+	align-items: center;
+}
+#container-login{
+	display: flex;
+	width: 820px;
+	height: 610px;
+	background-color: white;
+	font-family: cursive;
+}
+#container-login-left{
+	display: flex;
+	width: 380px;
+	height: 610px;
+}
+#header-bottom-left{
+	position: absolute;
+	margin-top: 500px;
+}
+#header-top-left{
+	position: absolute;
+	text-align: center;
+	margin-left: 60px;
+}
+#text-logo{
+	font-size: 50px;
+}
+#hint-text-logo{
+	font-size: 12px;
+	opacity: 0.7;
+}
+
+#container-login-right{
+	display: flex;
+	flex:1;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 24px;
+}
+#header-top-right{
+	font-size: 20px;
+	color: #B7B7B7;
+}
+.actived{
+	color: #DA7C79;
+}
+#container-social-login{
+	align-self: flex-end;
+	margin-bottom: -160px
+}
+#container-center-login-right{
+	margin-bottom: 50px;
+}
+#container-center-login-right input[type=text]{
+	margin-top: 8px;
+	font-size: 18px;
+}
+#container-center-login-right input[type=password]{
+	margin-top: 8px;
+	font-size: 18px;
+}
+#container-center-login-right input[type=submit]{
+	margin-top: 24px;
+	color: white;
+	font-size: 18px;
+}
+.material-textinput{
+	height: 38px;
+	border:0;
+	background-color: #D8D8D8;
+	width: 100%;
+}
+.material-primary-button{
+	height: 38px;
+	border:0;
+	background-color: #00909C;
+	width: 100%;
+	box-shadow: 3px 7px 10px skyblue;
+	border-radius: 5px;
+}
+.input-icon-email{
+	background-image: url(../image/icon_email.png);
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+	padding-left: 42px;
+	border: #D8D8D8 solid 3px;
+    border-radius: 5px;
+}
+.input-icon-password{
+	background-image: url(../image/icon_lock.jpg);
+	background-size: 32px 32px;
+	background-repeat: no-repeat;
+	padding-left: 42px;
+	border: #D8D8D8 solid 3px;
+    border-radius: 5px;
+}
+
+
+div p span{
+	margin-left: 5px;
+}
+div p img{
+	width: 15px;
+	height: 20px;
+	margin-left: 10px;
+}
+#background{
+	width: 380px;
+	height: 610px;
+}
+div img{
+	width: 30px;
+	height: 30px;
+}
+/* end css dang nhap */
+
+/* star css trang chu */
+
+#header{
+	background: linear-gradient(rgba(0,0,0,0.42),rgba(0,0,0,0.42)) ,url(../image/backgroundtrangchu.jpg) no-repeat center center fixed;
+    height: 100%;
+    background-size: cover;
+}
+
+/* end css trang chu */
