@@ -20,4 +20,17 @@ $(document).ready(function() {
 			}
 		});
 	});
+	
+	$("#dangnhap").click(function(){
+		$(this).addClass("actived");
+		$("#dangky").removeClass("actived");
+		$(".container-login-form").show();
+		$(".container-signup-form").css("display","none");
+	});
+	$("#dangky").click(function(){
+		$(this).addClass("actived");
+		$("#dangnhap").removeClass("actived");
+		$(".container-login-form").css("display","none");
+		$(".container-signup-form").show();
+	});
 })

@@ -41,25 +41,31 @@
 			</div>
 			<div id="container-login-right">
 				<div id="header-top-right" class="header-login">
-					<span class="actived">Đăng Nhập</span> / <span>Đăng Kí</span>
+					<span class="actived" id="dangnhap">Đăng Nhập</span> / <span id="dangky">Đăng Kí</span>
 				</div>
 				<div id="container-center-login-right">
-
-					<input id="email" name="email" class="material-textinput input-icon-email" placeholder="Email" type="text" /><br />
-					<input id="matkhau" name="matkhau" class="material-textinput input-icon-password" placeholder="Mật Khẩu" type="password" /><br /> 
-					<input id="btnDangNhap" class="material-primary-button" type="submit" value="ĐĂNG NHẬP" />
+					<div id="container-center-login-right"class="container-login-form">
+						<input id="email" name="email" class="material-textinput input-icon-email" placeholder="Email" type="text" /><br />
+						<input id="matkhau" name="matkhau" class="material-textinput input-icon-password" placeholder="Mật Khẩu" type="password" /><br /> 
+						<input id="btnDangNhap" class="material-primary-button" type="submit" value="ĐĂNG NHẬP" />
+					</div>
+					<div id="container-center-login-right"class="container-signup-form">
+						<form action="" method="post">
+							<input id="email" name="email" class="material-textinput input-icon-email" placeholder="Email" type="text" /><br />
+							<input id="matkhau" name="matkhau" class="material-textinput input-icon-password" placeholder="Mật Khẩu" type="password" /><br />
+							<input id="nhaplaimatkhau" name="nhaplaimatkhau" class="material-textinput input-icon-password" placeholder="Nhập Lại Mật Khẩu" type="password" /><br /> 
+							<input id="btnDangNhap" class="material-primary-button" type="submit" value="ĐĂNG KÝ" />
+						</form>
+					</div>
 					<span id="ketqua"/>
-
+					<span>${kiemtradangnhap }</span>
 				</div>
 				<div id="container-social-login">
 					<img alt="icon_facebook"
-						src='<c:url value="/resources/image/icon_facebook.jpg"/>' /> <img
+						src='<c:url value="/resources/image/icon_facebook.png"/>' /> <img
 						alt="icon_google"
 						src='<c:url value="/resources/image/icon_google.png"/>' />
 				</div>
-
-				<span>${kiemtradangnhap }</span>
-
 			</div>
 		</div>
 	</div>
