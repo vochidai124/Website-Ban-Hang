@@ -19,6 +19,11 @@ public class SanPhamService implements SanPhamImp{
 		
 		return sanPhamDAO.LayDanhSachSanPhamLimit(spbatdau);
 	}
+
+	@Override
+	public SanPham LayDanhSachChiTietSanPhamTheoMa(int masanpham) {
+		return sanPhamDAO.LayDanhSachChiTietSanPhamTheoMa(masanpham);
+	}
 	
 	
 }

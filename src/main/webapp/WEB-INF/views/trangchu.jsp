@@ -76,11 +76,13 @@
 		<div class="row">
 		<c:forEach var="listsanpham" items="${listSanPham }">
 			<div class="col-lg-3 col-md-6 col-12">
-				<div class="sanpham">
+				<a href="chitiet/${listsanpham.getMasanpham() }">
+					<div class="sanpham">
 					<img alt="hinh" src='<c:url value="/resources/image/sanpham/${listsanpham.getHinhsanpham() }"/>'/><br/>
 					<span>${listsanpham.getTensanpham() }</span><br/>
 					<span class="gia">${listsanpham.getGiatien() } VND</span>
-				</div>	
+					</div>	
+				</a>
 			</div>
 		</c:forEach>
 		</div>

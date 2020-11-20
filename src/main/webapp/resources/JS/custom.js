@@ -20,7 +20,7 @@ $(document).ready(function() {
 			}
 		});
 	});
-	
+});
 	$("#dangnhap").click(function(){
 		$(this).addClass("actived");
 		$("#dangky").removeClass("actived");
@@ -33,4 +33,32 @@ $(document).ready(function() {
 		$(".container-login-form").css("display","none");
 		$(".container-signup-form").show();
 	});
-})
+	
+	$(".btn-giohang").click(function(){
+		var mamau=$(this).closest("tr").find(".mau").attr("data-mamau");
+		var tenmau=$(this).closest("tr").find(".mau").text();
+		var masize=$(this).closest("tr").find(".size").attr("data-masize");
+		var tensize=$(this).closest("tr").find(".size").text();
+		var soluong=$(this).closest("tr").find(".soluong").text();
+		var tensp=$("#tensp").text();
+		var masp=$("#tensp").attr("data-masp");
+		var giatien=$("#giatien").attr("data-value");
+		
+		$.ajax({
+			url: "/minishop/api/ThemGioHang",
+			type: "GET",
+			data: {
+				masp: masp,
+				masize: masize,
+				mamau:mamau,
+				soluong:soluong,
+				tensp:tensp,
+				giatien:giatien,
+				tenmau:tenmau,
+				tensize:tensize
+			},
+			success: function(value) {
+				
+			}
+		})
+});

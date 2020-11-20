@@ -1,10 +1,15 @@
 html, body {
 	width: 100%;
-	height: 100%;
+    height: 100%;
 	font-family: Roboto !important;
 	font-size: 14px;
 }
-
+img{
+	width: 100%;
+}
+ul{
+	list-style-type: none;
+}
 #body-login {
 	background-color: #00909C;
 }
@@ -171,7 +176,6 @@ div p img {
 
 .navbar {
 	background-color: #000000FF;
-	height: 80px;
 }
 
 .nav_center {
@@ -313,6 +317,32 @@ div textarea {
 	background-color: #D8D8D8;
 	margin-bottom: 8px;
 }
+/* menu */
+
+.mymenu li ul{
+	display: none;
+}
+.mymenu li:hover > ul{
+	display: block;
+}
+.mymenu{
+	padding: 0;
+	margin: 0;
+}
+.mymenu li{
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px 0px;
+}
+
+/* end menu */
+
+/* star css chi tiết */
+.body-chitiet{
+	margin-top: 160px;
+}
+/* end css chi tiết */
+
 
 @media ( max-width : 575.98px) {
 	#icon-yame {

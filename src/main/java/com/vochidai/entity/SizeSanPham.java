@@ -11,18 +11,19 @@ public class SizeSanPham {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	int masize;
-	String tenmau;
+	String size;
 	public int getMasize() {
 		return masize;
 	}
 	public void setMasize(int masize) {
 		this.masize = masize;
 	}
-	public String getTenmau() {
-		return tenmau;
+	public String getSize() {
+		return size;
 	}
-	public void setTenmau(String tenmau) {
-		this.tenmau = tenmau;
+	public void setSize(String size) {
+		this.size = size;
 	}
+	
 	
 }
